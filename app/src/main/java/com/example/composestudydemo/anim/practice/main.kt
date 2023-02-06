@@ -11,11 +11,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composestudydemo.ui.theme.Shapes
 
 
 /*
@@ -34,7 +31,7 @@ val shimmerColors = listOf(
 ///骨架屏的动画效果
 @Preview
 @Composable
-fun MainPractice() {
+fun ShimmerDemo() {
     // 首先我们希望这个动画能够无限循环播放，
     // 所以使用rememberInfiniteTransition定义了一个InfiniteTransition，
     // 并使用animateFloat创建一个可以随动画改变的Float状态translateAnim。
